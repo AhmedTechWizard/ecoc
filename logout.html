@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Logout - EcoConnect</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="logout-container">
+    <h2>Logout</h2>
+    <p>Are you sure you want to logout?</p>
+    <form id="logout-form">
+      <button type="button" id="logout-btn">Logout</button>
+    </form>
+  </div>
+
+  <script>
+    document.getElementById('logout-btn').addEventListener('click', function() {
+      // Perform logout actions here (e.g., clearing session, token, etc.)
+
+      // Redirect to the login page
+      window.location.href = 'login.html';
+    });
+  </script>
+</body>
+</html>
